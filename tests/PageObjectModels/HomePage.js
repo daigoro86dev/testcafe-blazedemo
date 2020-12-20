@@ -28,7 +28,7 @@ class HomePage {
    */
   async assertPanelBodyText() {
     await Page.assertElementText(
-      this.panelBody,
+      this.getPanelBody(),
       Constants.getLoggedInConfirmationMsg()
     );
   }

@@ -1,7 +1,6 @@
 /**
  * Register page class
  */
-import { t } from 'testcafe';
 import User from '../Helpers/User';
 import Page from './Page';
 

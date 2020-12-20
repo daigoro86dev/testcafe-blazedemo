@@ -11,5 +11,8 @@
   "devDependencies": {
     "faker": "^5.1.0",
     "testcafe": "^1.10.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.0"
   }
 }
