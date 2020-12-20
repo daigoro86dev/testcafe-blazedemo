@@ -6,9 +6,7 @@ fixture`BlazemeterDemo`.page`${Constants.getBaseURL()}`;
 
 test.page`${Constants.getRegisterURL()}`('Registration Test', async (t) => {
   await RegisterPage.registerUser();
-  await t
-    .expect(HomePage.getPanelBody().textContent)
-    .contains(Constants.getLoggedInConfirmationMsg());
+  await HomePage.assertPanelBodyText();
 });
 
 // test.page`${Constants.getLoginURL()}`('Login Test', async (t) => {});
